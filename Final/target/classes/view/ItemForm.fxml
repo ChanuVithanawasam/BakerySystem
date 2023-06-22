@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ItemFormContext" prefHeight="577.0" prefWidth="822.0" style="-fx-border-color: #eaff02;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CakeBakery.controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="584.0" fitWidth="822.0" layoutX="-1.0" layoutY="-4.0" onKeyReleased="#txtFeild_Key_Released" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Background1.jpg" />
+         </image>
+         <effect>
+            <Blend opacity="0.65" />
+         </effect>
+      </ImageView>
+      <Text fill="#070c90" layoutX="71.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Form-: Add/Delete/Update">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAdd" layoutX="621.0" layoutY="260.0" mnemonicParsing="false" onAction="#AddItemOnAction" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #eaff02;" text="+ Add Item" wrapText="true">
+         <font>
+            <Font name="Ebrima Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtItemID" alignment="CENTER" layoutX="16.0" layoutY="46.0" onAction="#itemIdOnAction" onKeyReleased="#txtFeild_Key_Released" prefHeight="50.0" prefWidth="150.0" promptText="Item ID" style="-fx-border-width: 7px; -fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" alignment="CENTER" layoutX="16.0" layoutY="99.0" onKeyReleased="#txtFeild_Key_Released" prefHeight="50.0" prefWidth="150.0" promptText="Name" style="-fx-border-width: 7px; -fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescription" alignment="CENTER" layoutX="16.0" layoutY="152.0" onKeyReleased="#txtFeild_Key_Released" prefHeight="50.0" prefWidth="150.0" promptText="Description" style="-fx-border-width: 7px; -fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQty" alignment="CENTER" layoutX="16.0" layoutY="205.0" onKeyReleased="#txtFeild_Key_Released" prefHeight="50.0" prefWidth="150.0" promptText="QtyOnHand" style="-fx-border-width: 7px; -fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblItem" layoutX="27.0" layoutY="319.0" prefHeight="230.0" prefWidth="770.0">
+         <columns>
+            <TableColumn fx:id="tblColumId" prefWidth="86.0" text="Item Id" />
+            <TableColumn fx:id="tblColumnName" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="tblColumnDescription" prefWidth="169.0" text="Description" />
+            <TableColumn fx:id="tblColumnUnitPrice" prefWidth="141.0" text="QtyOnHand" />
+            <TableColumn fx:id="tblColumnQtyOnHand" prefWidth="130.0" text="Unit Price" />
+            <TableColumn fx:id="tblColumnOption" prefWidth="126.0" text="Option" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnSearch" layoutX="213.0" layoutY="260.0" mnemonicParsing="false" onAction="#SearchOnAction" prefHeight="50.0" prefWidth="143.0" style="-fx-background-color: #eaff02;" text="Search" wrapText="true">
+         <font>
+            <Font name="Ebrima Bold" size="17.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUnitPrice" alignment="CENTER" layoutX="16.0" layoutY="258.0" onKeyReleased="#txtFeild_Key_Released" prefHeight="50.0" prefWidth="150.0" promptText="Unit price" style="-fx-border-width: 7px; -fx-border-color: grey;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="PaymentFormContext" prefHeight="577.0" prefWidth="822.0" style="-fx-border-color: #b33939;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CakeBakery.controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="824.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/Background1.jpg" />
+         </image>
+         <effect>
+            <Blend opacity="0.65" />
+         </effect>
+      </ImageView>
+      <Text fill="#070c90" layoutX="111.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Detail Form">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblPayment" layoutX="89.0" layoutY="109.0" prefHeight="384.0" prefWidth="630.0">
+         <columns>
+            <TableColumn fx:id="tblcolPaymentId" prefWidth="193.0" text="Payment Id" />
+            <TableColumn fx:id="tblcolPaymentDetail" prefWidth="219.0" text="Payment Detail" />
+            <TableColumn fx:id="tblcolPayMeth" prefWidth="217.0" text="Payment Method" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="105.0" fitWidth="129.0" layoutX="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/kisspng-advance-payment-computer-icons-money-cash-payment-icon-5ab07b158f4357.0076462515215152855868.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
